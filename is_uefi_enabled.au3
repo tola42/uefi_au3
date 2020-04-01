@@ -8,7 +8,7 @@
 #include <MsgBoxConstants.au3>
 #include <Debug.au3>
 
-_DebugSetup("is_uefi", False) ; start displaying debug environment
+;~ _DebugSetup("is_uefi", False) ; start displaying debug environment
 
 $systemdrive = EnvGet('systemdrive')
 DllCall("kernel32.dll", "int", "Wow64DisableWow64FsRedirection", "int", 1)
